@@ -42,13 +42,14 @@
             <?php while($row = mysqli_fetch_assoc($result)) { ?>
                 <tr> 
                     <td><?=$row["num"]?></td>
-                    <td><?=htmlspecialchars($row["subject"])?></td>
+                    <td><a href="view.php?num=<?=$row["num"]?>"><?=htmlspecialchars($row["subject"])?></a></td>
                     <td><?=htmlspecialchars($row["name"])?></td>
                     <td><?=$row["regdate"]?></td>
                 </tr>
             <?php } ?>
         </tbody>
     </table>
+    <div class="my-5"><a href="insert.php" class="btn btn-primary">WRITE</a></div>
     
 <?php
     require_once "include/footer.php";

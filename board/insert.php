@@ -24,10 +24,13 @@
         <div class="row mb-3">
             <label for="content" class="col-sm-2 col-form-label">Content</label>
             <div class="col-sm-10">
-                <textarea type="text" class="form-control" id="content" name="content"></textarea>
+                <textarea type="text" class="form-control" id="content" name="content" rows="10"></textarea>
             </div>
         </div>
-        <div><button class="btn btn-primary">Sign in</button></div>
+        <div class="my-5 text-center">
+            <button class="btn btn-primary">CONFIRM</button>
+            <a href="list.php" class="btn btn-primary">LIST</a>
+        </div>
     </form>
 <?php
     require_once "include/footer.php";
