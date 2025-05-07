@@ -1,7 +1,7 @@
 <?php
 
     require_once "include/db.php";
-    
+
     $name = $_POST["name"];
     $subject = $_POST["subject"];
     $password = $_POST["password"];
@@ -13,7 +13,7 @@
 
     
     
-    $sql = "insert into board values (null,'$name','$subject','$password','$content','$regdate')";
+    $sql = "insert into board (num,name,subject,password, content,regdate) values (null,'$name','$subject','$password','$content','$regdate')";
     
     $result = mysqli_query($conn,$sql);
     

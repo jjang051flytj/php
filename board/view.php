@@ -44,11 +44,10 @@
         </tbody>
     </table>
     <div class="my-5 text-center">
-        <a href="modify.php" class="btn btn-primary">MODIFY</a>
-        <a href="delete.php" class="btn btn-danger">DELETE</a>
+        <a href="password-form.php?mode=modify&num=<?=$num?>" class="btn btn-primary">MODIFY</a>
+        <a href="password-form.php?mode=delete&num=<?=$num?>" class="btn btn-danger">DELETE</a>
         <a href="list.php" class="btn btn-primary">LIST</a>
     </div>
-    
 <?php
     require_once "include/footer.php";
 ?>
