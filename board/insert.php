@@ -2,11 +2,13 @@
     require_once "include/header.php";
 ?>
     <h2 class="my-5">글쓰기</h2>
-    <form action="insert_process.php" method="post">
+    <form action="insert_process.php" 
+    method="post">
         <div class="row mb-3">
             <label for="name" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" name="name">
+                <input type="text" class="form-control" 
+                id="name" name="name">
             </div>
         </div>
         <div class="row mb-3">
@@ -18,7 +20,8 @@
         <div class="row mb-3">
             <label for="subject" class="col-sm-2 col-form-label">Subject</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="subject" name="subject">
+                <input type="text" class="form-control" 
+                id="subject" name="subject">
             </div>
         </div>
         <div class="row mb-3">
