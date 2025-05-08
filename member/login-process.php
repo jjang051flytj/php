@@ -18,7 +18,7 @@
         session_start();
         $_SESSION["userID"] = $user["userid"];
         $_SESSION["userName"] = $user["username"];
-        echo "<script>alert('{$user["username"]}님 반갑습니다.'); location.href='index.php';</script>";  
+        echo "<script>location.href='index.php';</script>";  
     } else {
         echo "<script> location.href='login.php';</script>";  
     }
