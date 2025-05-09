@@ -14,7 +14,7 @@
     $row =  mysqli_fetch_assoc($result);
     $name =  htmlspecialchars($row["name"]);
     $subject =  htmlspecialchars($row["subject"]);
-    $content =  str_replace("\n","<br>",htmlspecialchars($row["content"]));
+    $content =  str_replace("\n","<br>",$row["content"]);
     $regdate =  $row["regdate"];
     //row를 반환하는데 컬럼명을 key로 반환한다. 배열이 떨어진다.
 ?>
@@ -23,7 +23,7 @@
         <colgroup>
             <col style="width:10%" />
             <col style="width:40%" />
-            <col style="width:150px" />
+            <col style="width:10px" />
             <col style="width:40%" />
         </colgroup>
         <tbody>
@@ -39,7 +39,7 @@
             </tr>
             <tr> 
                 <td>content</td>
-                <td colspan="3"><?=$content?></td>
+                <td colspan="3" class="ck-content"><?=$content?></td>
             </tr>
         </tbody>
     </table>

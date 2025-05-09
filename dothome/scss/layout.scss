@@ -8,3 +8,12 @@
   margin-bottom: 5px;
   border: 2px solid #333;
 }
+.ck-content {
+  padding: 30px !important;
+  img {
+    max-width: 100%;
+  }
+}
+.ck-editor__editable {
+  min-height: 300px;
+}
