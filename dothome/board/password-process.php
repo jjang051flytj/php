@@ -6,6 +6,7 @@
     $num = $_POST["num"];
     $password = $_POST["password"];
 
+    echo "$mode / $mode / $password";
     $sql =  "select password from board where num = $num";
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_assoc($result);

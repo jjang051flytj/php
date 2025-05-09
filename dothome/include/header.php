@@ -26,13 +26,15 @@
             </ul> 
             <?php if(!$userName){ ?>
                 <div class="col-md-3 text-end"> 
-                    <a href="login.php" class="btn btn-outline-primary me-2">Login</a> 
-                    <a href="signup.php" class="btn btn-primary">Sign-up</a> 
+                    <a href="../member/login.php" class="btn btn-outline-primary me-2">Login</a> 
+                    <a href="../member/signup.php" class="btn btn-primary">Sign-up</a> 
                 </div> 
             <?php } else { ?>
                 <div class="col-md-3 text-end"> 
-                    <a href="info.php" class="btn btn-outline-primary me-2"><?= $userName ?></a> 
-                    <a href="logout.php" class="btn btn-primary">Log Out</a> 
+                    <a href="../member/info.php" class="btn me-2">
+                        <img src="../upload/<?=$profile?>" alt="" class="profile">
+                    </a> 
+                    <a href="../member/logout.php" class="btn btn-primary">Log Out</a> 
                 </div> 
             <?php }  ?>
             <!-- 의논해서 info.php 만들어보세요... -->

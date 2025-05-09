@@ -9,4 +9,9 @@
     if(isset($_SESSION["userID"])){
         $userID = $_SESSION["userID"];
     } 
+    $profile="user.png";
+    if(isset($_SESSION["profile"])){
+        $profile = 
+        $_SESSION["profile"];
+    } 
 ?>

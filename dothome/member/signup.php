@@ -3,7 +3,7 @@
 ?>
     <!--여기에 내용 들어갑니다 -->
     <h2 class="my-5">SIGN UP</h2>
-    <form action="signup-process.php" method="post">
+    <form action="signup-process.php" method="post" enctype="multipart/form-data">
     <div class="row mb-3">
             <label for="userID" class="col-sm-2 col-form-label">USER ID</label>
             <div class="col-sm-10">
@@ -37,6 +37,12 @@
             <label for="userEmail" class="col-sm-2 col-form-label">User Email</label>
             <div class="col-sm-10">
                 <input type="text" class="form-control" id="userEmail" name="userEmail">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="profile" class="col-sm-2 col-form-label">File</label>
+            <div class="col-sm-10">
+                <input type="file" class="form-control" id="profile" name="profile"></input>
             </div>
         </div>
         <div class="my-5 text-center">
