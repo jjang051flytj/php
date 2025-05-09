@@ -1,6 +1,6 @@
 <?php
-    require_once "include/db.php";
-    require_once "include/session.php";
+    require_once "../include/db.php";
+    require_once "../include/session.php";
     //$userID = $_POST["userID"];
     $password = $_POST["password"]; //입력받은 암호
     
